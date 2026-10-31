@@ -1,0 +1,22 @@
+{
+  "name": "dan-recommender",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "bot": "node src/discord/bot.js",
+    "register": "node src/discord/register-commands.js",
+    "build:pool": "node tools/build-map-pool.mjs",
+    "sync:estimator": "node tools/sync-estimator.mjs",
+    "estimate": "node tools/smoke-estimate.mjs",
+    "test": "node --test \"test/**/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "sharp": "^0.35.5"
+  }
+}

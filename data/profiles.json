@@ -1,0 +1,216 @@
+{
+  "demo-user": {
+    "userId": "demo-user",
+    "clearedLevels": [
+      "reform-1st-mid"
+    ],
+    "nearClears": [
+      {
+        "danLevelId": "reform-1st-high",
+        "completion": 0.92,
+        "achievedAt": "2026-10-29T12:00:00.000Z"
+      }
+    ],
+    "clearedMapIds": [
+      "map-001"
+    ]
+  },
+  "1160688626934497481": {
+    "userId": "1160688626934497481",
+    "clearedLevels": [],
+    "verifiedCourseClearLevels": [],
+    "trackerCourseClearLevels": [],
+    "osuCourseClearLevels": [],
+    "legacyClearedLevels": [
+      "reform-9th-low"
+    ],
+    "nearClears": [],
+    "clearedMapIds": [],
+    "manualClearProofs": [],
+    "trackedOsuScoreIds": [],
+    "estimatedMapScores": [
+      {
+        "beatmapId": 1190555,
+        "scoreId": "671943652",
+        "danLevelId": "reform-6th-mid",
+        "label": "Reform 6 mid",
+        "accuracy": 0.9959049959049959,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671943652"
+      },
+      {
+        "beatmapId": 5829747,
+        "scoreId": "671917828",
+        "danLevelId": "reform-5th-high",
+        "label": "Reform 5 mid/high || < LN 5 mid",
+        "accuracy": 0.993109039319011,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671917828"
+      },
+      {
+        "beatmapId": 5329644,
+        "scoreId": "671893262",
+        "danLevelId": "reform-5th-low",
+        "label": "Reform 5 mid/low",
+        "accuracy": 0.9959995293563949,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671893262"
+      },
+      {
+        "beatmapId": 3621140,
+        "scoreId": "672135092",
+        "danLevelId": "reform-10th-low",
+        "label": "Reform 9 high",
+        "accuracy": 0.970402717127608,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/672135092"
+      },
+      {
+        "beatmapId": 5606802,
+        "scoreId": "671942809",
+        "danLevelId": "reform-7th-mid",
+        "label": "Reform 7 mid",
+        "accuracy": 0.9888146734520781,
+        "speedRate": 0.75,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671942809"
+      },
+      {
+        "beatmapId": 5455738,
+        "scoreId": "671890988",
+        "danLevelId": null,
+        "label": null,
+        "accuracy": 0.9935261317455817,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671890988"
+      },
+      {
+        "beatmapId": 5140134,
+        "scoreId": "671918105",
+        "danLevelId": "reform-5th-high",
+        "label": "Reform 5 high",
+        "accuracy": 0.9962515618492295,
+        "speedRate": 0.75,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671918105"
+      },
+      {
+        "beatmapId": 4758224,
+        "scoreId": "664118542",
+        "danLevelId": "reform-4th-mid",
+        "label": "Reform 4 mid",
+        "accuracy": 0.9735658042744657,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/664118542"
+      },
+      {
+        "beatmapId": 5046421,
+        "scoreId": "671919451",
+        "danLevelId": "reform-6th-high",
+        "label": "Reform 6 mid/high",
+        "accuracy": 0.995049504950495,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671919451"
+      },
+      {
+        "beatmapId": 5289093,
+        "scoreId": "672041998",
+        "danLevelId": "reform-6th-mid",
+        "label": "Reform 6 mid",
+        "accuracy": 0.9968744926124371,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/672041998"
+      },
+      {
+        "beatmapId": 4119684,
+        "scoreId": "672374982",
+        "danLevelId": null,
+        "label": null,
+        "accuracy": 0.9924639580602883,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/672374982"
+      },
+      {
+        "beatmapId": 5620162,
+        "scoreId": "671940732",
+        "danLevelId": null,
+        "label": null,
+        "accuracy": 0.992653810835629,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671940732"
+      },
+      {
+        "beatmapId": 4745257,
+        "scoreId": "673138955",
+        "danLevelId": "reform-6th-low",
+        "label": "Reform 6 low",
+        "accuracy": 0.9967948717948718,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/673138955"
+      },
+      {
+        "beatmapId": 790181,
+        "scoreId": "672040539",
+        "danLevelId": "reform-4th-low",
+        "label": "Reform 4 low",
+        "accuracy": 0.9963768115942029,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/672040539"
+      },
+      {
+        "beatmapId": 5632970,
+        "scoreId": "671917606",
+        "danLevelId": "reform-4th-mid",
+        "label": "Reform 4 mid/low",
+        "accuracy": 0.9972135144548938,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671917606"
+      },
+      {
+        "beatmapId": 5885547,
+        "scoreId": "671890370",
+        "danLevelId": null,
+        "label": null,
+        "accuracy": 0.9964114832535885,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671890370"
+      },
+      {
+        "beatmapId": 4119474,
+        "scoreId": "672373397",
+        "danLevelId": "reform-4th-low",
+        "label": "Reform 3 high || < LN 5 mid",
+        "accuracy": 0.9997063142437592,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/672373397"
+      },
+      {
+        "beatmapId": 2034202,
+        "scoreId": "671892564",
+        "danLevelId": "reform-5th-low",
+        "label": "Reform 5 low",
+        "accuracy": 0.9992753623188406,
+        "speedRate": 1.5,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/671892564"
+      },
+      {
+        "beatmapId": 4098158,
+        "scoreId": "619512893",
+        "danLevelId": "reform-1st-mid",
+        "label": "Reform 1 mid",
+        "accuracy": 0.9894530291881285,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/619512893"
+      },
+      {
+        "beatmapId": 2034201,
+        "scoreId": "656612822",
+        "danLevelId": "reform-4th-mid",
+        "label": "Reform 4 mid",
+        "accuracy": 0.9766203703703704,
+        "speedRate": 1,
+        "scoreUrl": "https://osu.ppy.sh/scores/mania/656612822"
+      }
+    ],
+    "osuUserId": 37908044,
+    "osuUsername": "mitix"
+  }
+}

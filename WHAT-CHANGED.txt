@@ -1,0 +1,77 @@
+Dan recommender estimate update
+===============================
+
+Top-play chart estimates now account for the score's speed mods before
+estimating chart difficulty. Previously, every score was analyzed at normal
+speed, so a Half Time play could be shown as if it were played at 1.0x.
+
+The osu! Legacy score importer now keeps the score's mod bit field. The
+estimator uses 0.75x for Half Time, 1.5x for Double Time or Nightcore, and
+1.0x when neither speed mod is present. The existing map estimator then
+recalculates the chart at that rate. The profile calls these "chart estimates"
+and still distinguishes them from verified Dan course clears and from
+Mania Tracker's player-level skill estimate.
+
+Existing saved estimates are refreshed when their score's rate was never
+stored or has changed. Unchanged scores are not downloaded and recalculated
+on every sync. New estimates save the applied rate with the score.
+
+The osu! Legacy score feed exposes fixed HT/DT/Nightcore mods; arbitrary
+custom rate adjustments are not available through that feed and are not
+inferred here. Mania Tracker's own 4K RC/LN skill estimate remains displayed
+separately as its independent, skill-based player estimate.
+
+Course-clear status no longer treats a pass on one chart as a cleared Dan.
+The score sync requires an explicit full-course marker, while the profile
+shows Mania Tracker's course-clear evidence and separately recorded manual
+proofs. Previously saved score-derived clears are retained as legacy,
+unverified data and no longer drive the verified-clear/recommendation level.
+Full-course clears use accuracy, not a miss cap: RC needs at least 96% stable
+accuracy, and LN needs at least 97%, with any number of misses allowed if the
+score is still a pass. The local osu! score feed provides stable judgment
+counts. For Mania Tracker evidence, lazer judgment counts are converted to
+stable accuracy using (300-point Perfect/Great, 200-point Good, 100-point Ok,
+50-point Meh, 0-point Miss) divided by 300 times the total judgments. The
+Tracker's stable accuracy is used only when its response identifies the score
+as stable and omits judgment counts. Scores without a link or usable stable
+accuracy, or below the track's threshold, are not verified clears. Rejected
+tracker evidence also demotes a stale saved clear for that course, while
+manual score proofs remain preserved. The high-tier Reform Zeta-through-Kappa
+map entries are explicitly marked as full courses so their scores can be
+checked by the automatic sync.
+
+Tracker-imported clear records are now tracked separately from osu!-synced and
+manual clears. When Mania Tracker successfully reports no qualifying course
+score, an old Tracker-only clear is downgraded instead of lingering as a
+verified clear; osu!-synced and manual clears are retained. The profile then
+shows a personalized estimated Dan rank when available, rather than only
+"none verified." The estimate uses Mania Tracker's per-user raw Dan value and
+label band (for example, raw 9.72 / label 10- becomes 10th Dan Low), and keeps
+each skillset's own estimate and clear evidence separate. These labels are
+estimates, not claims of a course clear. Per-skillset Tracker evidence can also
+show a Tracker clear or near clear independently of the overall Dan estimate.
+LN estimates use numbered Dan names through 17th Dan (rather than RC Greek
+tiers such as Alpha/Gamma); RC keeps its existing numbered-then-Greek naming.
+
+The profile response is now a Discord embed with the osu! avatar as its
+thumbnail. Its accent color is sampled from the avatar image; a logged
+fallback color is used if the image cannot be downloaded or decoded.
+
+The profile no longer reports the highest local per-map estimate as the
+player's RC Dan. That max-only estimate produced outliers such as ETA High
+for players whose tracker skill estimate is around 10-. The profile now uses
+Mania Tracker's player-level RC estimate and reports its per-skillset levels
+(Jack, Tech, Speed, and Stamina) as supporting context. For example, the
+linked account mitix has a Jack estimate of 9 while its overall estimate is
+10-, so one high chart estimate no longer overrides that skill breakdown.
+
+Validation:
+- Focused sync and profile tests cover the RC 96% and LN 97% accuracy bars,
+  scores with misses, stale-clear demotion, and lazer-to-stable conversion.
+- Profile tests cover personalized low/mid estimates from different tracker
+  values and fallback display when no verified course score is available.
+- Course tests verify that single-map scores do not count as Dan course clears.
+- Profile tests cover the embed, course evidence, and avatar-color sampling.
+- One existing numericToDanLevel test still expects eta-high for 25 while the
+  current mapping returns kappa-high.
+- Restart the bot to load the updated source.

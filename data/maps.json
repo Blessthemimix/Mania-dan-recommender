@@ -1,0 +1,38 @@
+[
+  {
+    "id": "map-001",
+    "title": "Sample Chart A",
+    "danLevelId": "reform-1st-high",
+    "rating": 75
+  },
+  {
+    "id": "map-002",
+    "title": "Sample Chart B",
+    "danLevelId": "reform-2nd-low",
+    "rating": 81
+  },
+  {
+    "id": "map-003",
+    "title": "Sample Chart C",
+    "danLevelId": "reform-2nd-mid",
+    "rating": 72
+  },
+  {
+    "id": "map-004",
+    "title": "Sample Chart D",
+    "danLevelId": "reform-2nd-high",
+    "rating": 89
+  },
+  {
+    "id": "map-005",
+    "title": "Sample Chart E",
+    "danLevelId": "reform-3rd-low",
+    "rating": 78
+  },
+  {
+    "id": "map-006",
+    "title": "Sample Chart F",
+    "danLevelId": "alpha-low",
+    "rating": 91
+  }
+]
